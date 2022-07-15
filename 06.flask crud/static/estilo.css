@@ -1,0 +1,287 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../static/logo.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+div{
+background-color: rgb(27, 4, 4);
+}
+a{
+    font-size: large;
+    font-variant-position: sub;
+    color: #9b6a49;
+    position: left;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+}
+label{
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    color: #f0f0f5;
+}
+h3{
+        font-size: medium;
+        font-weight: 300;
+        font-style: italic;
+        color: #f0f0f5;
+}
+.s{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.section{
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+
+.columns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+
+   
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.sectio{
+    width: 100%;
+    padding: 50px 0px;
+    background: white;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.column form{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #171718;
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    background: #0c94e2;
+    font-size: 16px;
+    outline: none;
+}
+
+.columns{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+.div3columns{
+    background-color: aqua;
+}
+
+.columns{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+/*
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .columns{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+*/
+/*ventas
+.venta {
+    width: 400px;
+    height: 550px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(239, 232, 134, 0.5);
+    text-align: center;
+    border-radius: 20%;
+   
+}
+
+.create-a {
+    padding: 2.7rem 0;
+    font-size:60px;
+    font-family: xd9;
+    color: #070708;
+    text-shadow: 5px 3px 3px rgb(177, 177, 169);
+    font-weight:lighter;
+    
+}
+
+.venta input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.venta button[type="submit"] {
+    width: 60%;
+    margin: auto;
+    padding: .7rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(246, 240, 149);
+}
+
+.venta button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(228, 187, 187, 0.2);
+}
+   
+.venta button[type="submit"]:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(74, 146, 143, 0.2);
+}
+   
+.venta button[type="submit"]::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+   
+.venta button[type="submit"]::after {
+    background-color: rgb(152, 142, 142);
+   }
+   
+.venta button[type="submit"]:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+*/
